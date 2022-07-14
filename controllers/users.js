@@ -59,7 +59,7 @@ const registerUser = async (req, res, next) => {
 const loginUser = async (req, res, next) => {
   try {
     const token = await authService.loginUser(req.body);
-    // перевірка verify?
+    
     res.json({
       code: 200,
       data: token,
@@ -100,5 +100,7 @@ module.exports = {
   registerUser,
   loginUser,
   logoutUser,
+  // confirm,
+  // resend,
   getUser,
 };
