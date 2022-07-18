@@ -5,7 +5,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [ "prettier"],
+  extends: ["standard", "prettier"],
   parserOptions: {
     ecmaVersion: "latest",
   },

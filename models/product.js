@@ -13,7 +13,8 @@ const productSchema = new Schema({
     default: 100,
   },
   title: {
-    type: Object,
+    ru: { type: String, index: true },
+    ua: { type: String, index: true },
   },
   calories: {
     type: Number,
