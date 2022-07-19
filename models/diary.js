@@ -1,22 +1,22 @@
 const { Schema, model } = require("mongoose");
 const Joi = require("joi").extend(require("@joi/date"));
 
-const productSchema = new Schema({
-  _id: {
-    type: Schema.Types.ObjectId,
-    ref: "products",
-  },
-  title: {
-    type: String,
-  },
-  calories: {
-    type: Number,
-  },
-  weight: {
-    type: Number,
-    default: 100,
-  },
-});
+// const productSchema = new Schema({
+//   _id: {
+//     type: Schema.Types.ObjectId,
+//     ref: "products",
+//   },
+//   title: {
+//     type: String,
+//   },
+//   calories: {
+//     type: Number,
+//   },
+//   weight: {
+//     type: Number,
+//     default: 100,
+//   },
+// });
 
 const diarySchema = new Schema(
   {

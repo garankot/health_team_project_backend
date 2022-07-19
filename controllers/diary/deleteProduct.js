@@ -1,5 +1,5 @@
-const {Diary}=require('../../models/diary');
-const {createError}=require('../../helpers/errors');
+// const {Diary}=require('../../models/diary');
+// const {createError}=require('../../helpers/errors');
 const {deleteProduct}=require('../../services/diary/deleteProductService');
 
 const deleteProductCtrl = async(req, res, next)=>{
